@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--The free icons used in this application are from the follwing website: https://fontawesome.com/icons?d=gallery&m=free-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstRealTry.MainPage">
+    <!--<ContentPage.Resources>
+        <StyleSheet Source="Zooi/Style.css" />
+    </ContentPage.Resources>-->
+
+    <StackLayout>
+        <!--header-->
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*" />
+                    <ColumnDefinition Width="70*" />
+                    <ColumnDefinition Width="15*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" 
+                        Grid.Column="0"
+                        Text="&#xf053;"
+                        FontFamily="{StaticResource FontAwesomeSolid}"/>
+                <Label HorizontalOptions="Center"
+                       Grid.Row="0" 
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       Text="Fitness app"
+                       FontSize="41" />
+                <Button Grid.Row="0" 
+                        Grid.Column="2"
+                        Text="Btn"/>
+            </Grid>
+        </StackLayout>
+        <StackLayout BackgroundColor="#FFD09B">
+            <Label HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="&#xf200;"
+                   FontFamily="{StaticResource FontAwesomeSolid}"
+                   FontSize="150"/>
+        </StackLayout>
+        <ContentView>
+            <StackLayout>
+                <Image Source="dance.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                <Label Text="Image UriSource Xaml" />
+            </StackLayout>
+        </ContentView>
+    </StackLayout>
+</ContentPage>
