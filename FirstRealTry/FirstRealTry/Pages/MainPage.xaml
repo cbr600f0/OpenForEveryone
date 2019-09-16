@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="Home"
              mc:Ignorable="d"
              x:Class="FirstRealTry.MainPage">
     <!--<ContentPage.Resources>
@@ -12,31 +13,6 @@
 
     <StackLayout>
         <!--header-->
-        <StackLayout>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="15*" />
-                    <ColumnDefinition Width="70*" />
-                    <ColumnDefinition Width="15*" />
-                </Grid.ColumnDefinitions>
-                <Button Grid.Row="0" 
-                        Grid.Column="0"
-                        Text="&#xf053;"
-                        FontFamily="{StaticResource FontAwesomeSolid}"/>
-                <Label HorizontalOptions="Center"
-                       Grid.Row="0" 
-                       Grid.Column="1"
-                       VerticalOptions="Center"
-                       Text="Fitness app"
-                       FontSize="41" />
-                <Button Grid.Row="0" 
-                        Grid.Column="2"
-                        Text="Btn"/>
-            </Grid>
-        </StackLayout>
         <StackLayout BackgroundColor="#FFD09B">
             <Label HorizontalOptions="Center"
                    VerticalOptions="Center"

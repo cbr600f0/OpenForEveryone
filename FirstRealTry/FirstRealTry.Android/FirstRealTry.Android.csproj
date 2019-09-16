@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -102,7 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FirstRealTry\FirstRealTry.csproj">
-      <Project>{95F2EE43-8FFE-4D1C-8944-D60C4605AEFF}</Project>
+      <Project>{97005BC3-E7F1-4AC6-A51A-2862E46E79C7}</Project>
       <Name>FirstRealTry</Name>
     </ProjectReference>
   </ItemGroup>
