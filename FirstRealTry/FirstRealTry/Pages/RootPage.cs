@@ -10,8 +10,8 @@ namespace FirstRealTry
             BackgroundImageSource = FileImageSource.FromFile("dance.jpg");
             ToolbarItems.Add(new ToolbarItem
             {
-                Name = "Sidney",
-                Command = new Command(() => { DisplayAlert("Kanker", "Neger", "Yes"); })
+                Text = "Menu",
+                Command = new Command(() => { DisplayAlert("Hamburger menu", "Specialised for navigation", "Sounds great!"); })
             });
         }
     }

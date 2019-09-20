@@ -7,24 +7,94 @@
              Title="Home"
              mc:Ignorable="d"
              x:Class="FirstRealTry.MainPage">
-    <!--<ContentPage.Resources>
-        <StyleSheet Source="Zooi/Style.css" />
-    </ContentPage.Resources>-->
-
-    <StackLayout>
-        <!--header-->
-        <StackLayout BackgroundColor="#FFD09B">
-            <Label HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   Text="&#xf200;"
-                   FontFamily="{StaticResource FontAwesomeSolid}"
-                   FontSize="150"/>
-        </StackLayout>
-        <ContentView>
-            <StackLayout>
-                <Image Source="dance.jpg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-                <Label Text="Image UriSource Xaml" />
+    <ScrollView>
+        <StackLayout>
+            <!--header-->
+            <Grid HeightRequest="100" Padding="0" Margin="0">
+                <Image Source="dance.jpg" Aspect="AspectFill" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*" />
+                        <ColumnDefinition Width="70*" />
+                        <ColumnDefinition Width="15*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                    Text="&#xf053;"
+                    FontSize="20"
+                    FontFamily="{StaticResource FontAwesomeSolid}"
+                    Clicked="PreviousPageButton_Clicked"
+                    TextColor="#C7E8BF"
+                    BackgroundColor="Transparent"/>
+                    <Label Grid.Column="1"
+                    Text="{Binding Mark}" 
+                    x:Name="MarkLabel" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20" 
+                    TextColor="#C7E8BF"/>
+                    <Button Grid.Column="2" 
+                    Clicked="RegisterPageButton_Clicked" 
+                    Text="&#xf0c9;"
+                    FontSize="20"
+                    TextColor="#C7E8BF"
+                    BackgroundColor="Transparent"
+                    FontFamily="{StaticResource FontAwesomeSolid}"/>
+                </Grid>
+            </Grid>
+            <StackLayout BackgroundColor="Orange" Margin="0" Padding="0">
+                <Frame HeightRequest="180" WidthRequest="180" CornerRadius="90" HorizontalOptions="Center" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="White">
+                    <Frame HeightRequest="160" WidthRequest="160" CornerRadius="80" HorizontalOptions="Center" VerticalOptions="Center" Margin="0" Padding="0" BackgroundColor="Orange">
+                        <Label Text="Amount of steps today: 0/6000" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="15"/>
+                    </Frame>
+                </Frame>
             </StackLayout>
-        </ContentView>
-    </StackLayout>
+            <StackLayout BackgroundColor="#E6FFC1" HeightRequest="100">
+                <Label Text="Your daily activity: &#x0a;&#x0a;0 km &#x0a;0 Kcal burned" FontSize="20" Margin="20, 0, 0, 0"/>
+            </StackLayout>
+            <StackLayout HeightRequest="150" BackgroundColor="#C9FFD6">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="75*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame WidthRequest="10" HeightRequest="10" HorizontalOptions="Start" VerticalOptions="Center" Margin="20, 5, 0, 0" Grid.Column="0" BackgroundColor="#C9FFD6" />
+                    <Label Text="Exercise programs" FontSize="20" Grid.Column="1"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame Grid.Column="0" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#DFFFDB"/>
+                    <Frame Grid.Column="1" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#EEFFD1"/>
+                    <Frame Grid.Column="2" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#F3FFB2"/>
+                    <Frame Grid.Column="3" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#FFF5C1"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout HeightRequest="150" BackgroundColor="#C9FFD6">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="75*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame WidthRequest="10" HeightRequest="10" HorizontalOptions="Start" VerticalOptions="Center" Margin="20, 5, 0, 0" Grid.Column="0" BackgroundColor="#C9FFD6" />
+                    <Label x:Name="GenericLabel" Text="{Binding GenericText}" FontSize="40" Grid.Column="1"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame Grid.Column="0" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#DFFFDB"/>
+                    <Frame Grid.Column="1" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#EEFFD1"/>
+                    <Frame Grid.Column="2" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#F3FFB2"/>
+                    <Frame Grid.Column="3" WidthRequest="20" HeightRequest="20" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#FFF5C1"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstRealTry.Pages.AccountInformationPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <StackLayout BackgroundColor="#EFFFAC">
+                        <Grid HeightRequest="100" Padding="0" Margin="0">
+                            <Image Source="dance.jpg" Aspect="AspectFill" />
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="15*" />
+                                    <ColumnDefinition Width="70*" />
+                                    <ColumnDefinition Width="15*" />
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0"
+                        Text="&#xf053;"
+                        FontSize="20"
+                        FontFamily="{StaticResource FontAwesomeSolid}"
+                        TextColor="#C7E8BF"
+                        Clicked="PreviousButton_Clicked"
+                        BackgroundColor="Transparent"/>
+                                <Label Grid.Column="1"
+                        Text="{Binding Mark}" 
+                        x:Name="MarkLabel" 
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="20" 
+                        TextColor="#C7E8BF"/>
+                                <Button Grid.Column="2"
+                        Text="&#xf0c9;"
+                        FontSize="20"
+                        TextColor="#C7E8BF"
+                        BackgroundColor="Transparent"
+                        FontFamily="{StaticResource FontAwesomeSolid}"/>
+                            </Grid>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout BackgroundColor="#FFDA72">
+                    <Label Text="Account management"  HorizontalOptions="Center" FontSize="30"/>
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="80, 0, 0, 0">
+                        <Label Text="Name: Lorem" FontSize="30" Margin="20"/>
+                        <Label Text="Username: ipsum" FontSize="30" Margin="20" />
+                        <Label Text="Registered email: Foo@bar.com" FontSize="30" Margin="20" />
+                        <Label Text="Extra field" FontSize="30" Margin="20" />
+                        <Label Text="Extra field" FontSize="30" Margin="20" />
+                        <Label Text="Extra field" FontSize="30" Margin="20" />
+                    </StackLayout>
+                    <StackLayout VerticalOptions="End" Padding="0" Margin="0">
+                        <Button Text="Change password" BackgroundColor="#E2B375"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

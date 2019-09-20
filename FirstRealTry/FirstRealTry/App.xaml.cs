@@ -10,7 +10,8 @@ namespace FirstRealTry
         {
             InitializeComponent();
 
-            MainPage = new RootPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new RootPage(new MainPage());
         }
 
         protected override void OnStart()
