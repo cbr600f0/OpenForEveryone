@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirstRealTry.Pages.MenuPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid HeightRequest="100" Padding="0" Margin="0">
+                <Image Source="dance.jpg" Aspect="AspectFill" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*" />
+                        <ColumnDefinition Width="85*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"
+                    Text="&#xf053;"
+                    FontSize="20"
+                    FontFamily="{StaticResource FontAwesomeSolid}"
+                    Clicked="PreviousPageButton_Clicked"
+                    TextColor="#C7E8BF"
+                    BackgroundColor="Transparent"/>
+                    <Label Grid.Column="1"
+                    Text="{Binding Mark}" 
+                    x:Name="MarkLabel" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="20" 
+                    TextColor="#C7E8BF"/>
+                </Grid>
+            </Grid>
+            <StackLayout>
+                <Button Text="Main page" Clicked="MainPageButton_Clicked" />
+                <Button Text="Login page" Clicked="LoginPageButton_Clicked" />
+                <Button Text="Register page" Clicked="RegisterPageButton_Clicked" />
+                <Button Text="Account information page" Clicked="AccountInformationPageButton_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

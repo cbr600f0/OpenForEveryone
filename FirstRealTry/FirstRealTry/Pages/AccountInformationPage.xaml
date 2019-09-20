@@ -35,6 +35,7 @@
                                 <Button Grid.Column="2"
                         Text="&#xf0c9;"
                         FontSize="20"
+                        Clicked="MenuPageButton_Clicked"
                         TextColor="#C7E8BF"
                         BackgroundColor="Transparent"
                         FontFamily="{StaticResource FontAwesomeSolid}"/>

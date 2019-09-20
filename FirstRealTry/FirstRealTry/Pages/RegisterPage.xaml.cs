@@ -35,5 +35,10 @@ namespace FirstRealTry.Pages
         {
             await Navigation.PushAsync(new LoginPage());
         }
+
+        private async void MenuPageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MenuPage());
+        }
     }
 }

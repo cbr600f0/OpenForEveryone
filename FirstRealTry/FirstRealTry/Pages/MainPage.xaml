@@ -33,7 +33,7 @@
                     FontSize="20" 
                     TextColor="#C7E8BF"/>
                     <Button Grid.Column="2" 
-                    Clicked="RegisterPageButton_Clicked" 
+                    Clicked="MenuPage_Clicked" 
                     Text="&#xf0c9;"
                     FontSize="20"
                     TextColor="#C7E8BF"

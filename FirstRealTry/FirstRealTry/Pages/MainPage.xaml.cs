@@ -19,9 +19,9 @@ namespace FirstRealTry
             InitializeComponent();
         }
 
-        private async void RegisterPageButton_Clicked(object sender, System.EventArgs e)
+        private async void MenuPage_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new AccountInformationPage());
+            await Navigation.PushAsync(new MenuPage());
         }
 
         private async void PreviousPageButton_Clicked(object sender, System.EventArgs e)

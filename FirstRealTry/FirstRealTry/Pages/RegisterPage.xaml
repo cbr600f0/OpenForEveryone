@@ -31,6 +31,7 @@
                         TextColor="#C7E8BF"/>
                     <Button Grid.Column="2"
                         Text="&#xf0c9;"
+                        Clicked="MenuPageButton_Clicked"
                         FontSize="20"
                         TextColor="#C7E8BF"
                         BackgroundColor="Transparent"
